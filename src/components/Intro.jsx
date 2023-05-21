@@ -45,7 +45,7 @@ export function Intro() {
     <>
      
       <h1 className="mt-14 font-display text-4xl/tight font-light text-white">
-        oi5{' '}
+        Oi5{' '}
         <span className="text-red-800"></span>
       </h1>
       <p className="mt-4 text-sm/6 text-gray-300">
