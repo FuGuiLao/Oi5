@@ -60,7 +60,7 @@ export function Intro() {
         </Link>
       </div>
       <h1 className="mt-4 font-display text-4xl/tight font-semibold text-white">
-        Oi5 <span className="font-normal">/</span> {' '}
+        Oi5 <span className="font-normal"></span> {' '}
         <span className="text-sky-300 font-light"></span>
       </h1>
       <p className="mt-4 text-sm/6 text-gray-300">
