@@ -16,7 +16,7 @@ export function SignUpForm() {
   const handleChangeEmail = (e) => {
     setEmailAddress(e.target.value);
     if (!!e.target.value && !validateEmail(e.target.value)) {
-      setErrorText('Invalid email address');
+      setErrorText('invalid authorization code');
     } else {
       setErrorText(''); 
     }
