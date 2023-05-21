@@ -12,10 +12,10 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>ORIGIN / Intelligence</title>
+        <title>Oi5</title>
         <meta
           name="description"
-          content=""
+          content="an investigation and intelligence agency"
         />
       </Head>
       <ThemeProvider attribute="class" disableTransitionOnChange>
