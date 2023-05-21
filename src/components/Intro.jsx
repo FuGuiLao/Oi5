@@ -54,23 +54,53 @@ export function Intro() {
 
   return (
     <>
-    
+      <div className="flex items-center jusitfy-center">
+        <Link href="/">
+          <Image src="/images/origin-logo.png" alt="" width={64} height={64} />
+        </Link>
+      </div>
       <h1 className="mt-4 font-display text-4xl/tight font-semibold text-white">
-        Oi5<span className="font-normal">/</span> {' '}
-        <span className="text-sky-300 font-light"></span>
+        ORIGIN <span className="font-normal">/</span> {' '}
+        <span className="text-sky-300 font-light">Intelligence</span>
       </h1>
       <p className="mt-4 text-sm/6 text-gray-300">
-        an investigation and intelligence agency
+        Origin developed and operates an industry-leading system to aggregate structured and unstructured data. We then use a combination of machine learning, artificial intelligence, and experienced human intelligence to process that data and monitor it in real-time. We provide services to government agencies and organizations.
       </p>
       <SignUpForm />
-     
-     
+      <div className="mt-8 flex flex-wrap justify-center gap-x-1 gap-y-3 sm:gap-x-2 lg:justify-start">
+        <IconButton icon={CalendarIcon} className="flex-none" onClick={() => setOpenSchedule(true)}>
+          Schedule a Consultation
+        </IconButton>
+        <IconButton icon={PhoneIcon} className="flex-none" onClick={() => setOpenContact(true)}>
+          Contact Us
+        </IconButton>
+      </div>
+      <ModalWrapper
+        open={openSchedule}
+        onClose={() => setOpenSchedule(false)}
+        icon={CalendarIcon}
+        title="Schedule a Consultation"
+      >
+        <div className="h-[600px] bg-white dark:bg-gray-950">
+          <CalendlyWidget />
+        </div>
+      </ModalWrapper>
+      <ModalWrapper
+        open={openContact}
+        onClose={() => setOpenContact(false)}
+        icon={PhoneIcon}
+        title="Contact Us"
+      >
+        <ContactUs />
+      </ModalWrapper>
     </>
   )
 }
 
 export function IntroFooter() {
   return (
-   
+    <p className="flex items-baseline gap-x-2 text-[0.8125rem]/6 text-gray-500">
+      Copyright &copy; {new Date().getFullYear()} Origin Intelligence Inc. All Rights Reserved.
+     </p>
   )
 }
