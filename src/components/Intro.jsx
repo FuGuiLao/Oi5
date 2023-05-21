@@ -64,24 +64,7 @@ export function Intro() {
       </p>
       <SignUpForm />
      
-      <ModalWrapper
-        open={openSchedule}
-        onClose={() => setOpenSchedule(false)}
-        icon={CalendarIcon}
-        title="Schedule a Consultation"
-      >
-        <div className="h-[600px] bg-white dark:bg-gray-950">
-          <CalendlyWidget />
-        </div>
-      </ModalWrapper>
-      <ModalWrapper
-        open={openContact}
-        onClose={() => setOpenContact(false)}
-        icon={PhoneIcon}
-        title="Contact Us"
-      >
-        <ContactUs />
-      </ModalWrapper>
+     
     </>
   )
 }
