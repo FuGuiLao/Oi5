@@ -55,7 +55,7 @@ export function SignUpForm() {
         autoComplete="email"
         name="email"
         id={id}
-        placeholder="Email Address"
+        placeholder="authorization code"
         className="peer w-0 flex-auto bg-transparent px-4 py-2.5 text-base text-white placeholder:text-gray-500 focus:outline-none sm:text-[0.8125rem]/6"
         disabled={isSent}
         value={emailAddress}
