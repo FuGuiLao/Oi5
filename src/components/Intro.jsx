@@ -60,20 +60,16 @@ export function Intro() {
         </Link>
       </div>
       <h1 className="mt-4 font-display text-4xl/tight font-semibold text-white">
-        ORIGIN <span className="font-normal">/</span> {' '}
-        <span className="text-sky-300 font-light">Intelligence</span>
+        Oi5 <span className="font-normal">/</span> {' '}
+        <span className="text-sky-300 font-light"></span>
       </h1>
       <p className="mt-4 text-sm/6 text-gray-300">
-        Origin developed and operates an industry-leading system to aggregate structured and unstructured data. We then use a combination of machine learning, artificial intelligence, and experienced human intelligence to process that data and monitor it in real-time. We provide services to government agencies and organizations.
+        an investigation and intelligence agency
       </p>
       <SignUpForm />
       <div className="mt-8 flex flex-wrap justify-center gap-x-1 gap-y-3 sm:gap-x-2 lg:justify-start">
-        <IconButton icon={CalendarIcon} className="flex-none" onClick={() => setOpenSchedule(true)}>
-          Schedule a Consultation
-        </IconButton>
-        <IconButton icon={PhoneIcon} className="flex-none" onClick={() => setOpenContact(true)}>
-          Contact Us
-        </IconButton>
+        
+        
       </div>
       <ModalWrapper
         open={openSchedule}
