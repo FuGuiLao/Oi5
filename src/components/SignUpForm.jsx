@@ -16,7 +16,7 @@ export function SignUpForm() {
   const handleChangeEmail = (e) => {
     setEmailAddress(e.target.value);
     if (!!e.target.value && !validateEmail(e.target.value)) {
-      setErrorText('invalid authorization code');
+      setErrorText('invalid auth code');
     } else {
       setErrorText(''); 
     }
@@ -55,8 +55,8 @@ export function SignUpForm() {
         autoComplete="email"
         name="email"
         id={id}
-        placeholder="authorization code"
-        className="peer w-0 flex-auto bg-transparent px-4 py-2.5 text-base text-white placeholder:text-gray-500 focus:outline-none min-w-min sm:text-[0.8125rem]/6"
+        placeholder="auth code"
+        className="peer w-0 flex-auto bg-transparent px-4 py-2.5 text-base text-white placeholder:text-gray-500 focus:outline-none sm:text-[0.8125rem]/6"
         disabled={isSent}
         value={emailAddress}
         onChange={handleChangeEmail}
@@ -69,7 +69,7 @@ export function SignUpForm() {
         arrow={!isSent}
         disabled={isSent}
       >
-        {isSent ? "thank you" : "get access"}
+        {isSent ? "thank you" : "access"}
       </Button>
       <div className="absolute inset-0 -z-10 rounded-lg transition peer-focus:ring-4 peer-focus:ring-sky-300/15" />
       <div className="absolute inset-0 -z-10 rounded-lg bg-white/2.5 ring-1 ring-white/15 transition peer-focus:ring-sky-300" />
